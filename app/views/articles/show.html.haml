@@ -1,0 +1,13 @@
+.container
+ .main_contain_display
+  %h4.second_header= @article.title
+  %p.paragraph Description
+  = @article.body
+
+  %p.paragraph_example Example
+  .example
+   = (h @article.example).gsub("\n", "<br />").html_safe
+  %p
+  %hr
+  =link_to "Back",articles_path,class:"btn btn-info"
+

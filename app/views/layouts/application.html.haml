@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Learncode
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav.navbar.navbar-default.navbar
+      .container
+        %ul.nav.navbar-nav
+          %li= link_to "Learncode Academy", root_path
+          %li= link_to "HTML", articles_path
+          %li= link_to "CSS", posts_path
+          %li= link_to "About Me",about_index_path
+          %li= link_to "Feedback",new_feedback_path
+  
+      
+  = yield
+  %hr
+  .container
+    %p.paragraph &copy; Learncode Academy  2016

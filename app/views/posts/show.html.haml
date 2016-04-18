@@ -1,0 +1,14 @@
+.container
+ .main_contain_display
+  %h4.fourth_header= @post.title
+  %p.paragraph Description
+  = @post.body
+
+  %p.paragraph_example Syntax
+  = @post.syntax
+  %p.paragraph_example Example
+  .example
+   = simple_format(h @post.example)
+  %p
+  =link_to "Back",posts_path,class:"btn btn-info"
+

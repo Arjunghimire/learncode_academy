@@ -1,0 +1,5 @@
+.container
+ - @articles.each do |article|
+  %h4.second_header= link_to article.title,article_path(article)
+  %p.paragraph= article.body
+  %hr
