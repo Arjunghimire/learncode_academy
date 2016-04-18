@@ -1,4 +1,28 @@
 .container
+ .row
+  .col-xs-12.col-sm-6.col-md-8 
+   %h1.first_header Introduction of HTML
+   %p.paragraph 
+    HTML5 specification not only embraces the past, by supporting traditional HTML- and XHTML-style syntax, but also adds a wide range of new featur Although HTML5 moves forward from HTML 4, it also is somewhat of a retreat and an admission that trying to get every Web developer on the Internet to write their markup properly is a futile effort, particularly because few Web developers are actually formally trained in the technology. 
+    HTML5 tries to bring order to chaos by codifying common practices, embracing what is already implemented in browsers, and documenting how these user agents (browsers or other programs that consume Web pages) should deal with our imperfect markup.
+
+    HTML5’s goals are grand. The specification is sprawling and often misunderstood.
+    Given the confusion, the goals of this chapter are not only to summarize what is new about
+    HTML5 and provide a roadmap to the element reference that follows, but to also expose
+    some of the myths and misconceptions about this exciting new approach to markup.
+  .col-xs-6.col-md-4 
+   %h2.second_header Hello World
+   %p.paragraph
+    The syntax of HTML5 should be mostly familiar. A simple
+    HTML5 document looks like this:
+    .example
+     = (h @html_syntax).gsub("\n", "<br />").html_safe
+     
+ %hr
+ %h3.second_paragraph 
+  All HTML Tags (
+  = @articles.count
+  )
  - @articles.each do |article|
   %h4.second_header= link_to article.title,article_path(article)
   %p.paragraph= article.body
