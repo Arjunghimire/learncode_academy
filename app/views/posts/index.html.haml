@@ -1,4 +1,17 @@
 .container
+ %h1.first_header Introduction of CSS
+ %p.paragraph_html
+  In the past, much of the visual formatting of Web pages was supplied by markup elements,squarely mixing the concepts of logical and physical markup into the mess that is classic HTML.
+  Strict variants of (X)HTML deprecated the elements and attributes
+  that focused on presentation, providing a clear distinction between the structure provided by markup and the look dictated by a style sheet written in Cascading Style Sheets (CSS)
+  syntax. The distinct division of duties between markup and style can provide numerous
+  production, maintenance, and even performance benefits, making it a far superior
+  presentation solution to markup alone.
+ %hr
+ %h3.second_paragraph 
+  All CSS Elements (
+  = @posts.count
+  )
  - @posts.each do |post|
   %h4.fourth_header= link_to post.title,post_path(post)
   %p.paragraph= post.body

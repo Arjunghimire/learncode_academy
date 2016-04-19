@@ -11,9 +11,10 @@
      .panel-body= link_to article.title,article_path(article)
    .link_page= link_to "See more",articles_path
    %br/
-   .panel.panel-danger
+   .panel.panel-success
     .panel-heading
      %h3.panel-title Latest Posts of CSS
     -@posts.each do |post|
      .panel-body= link_to post.title,post_path(post)
    .link_page= link_to "See more",posts_path
+  

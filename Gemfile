@@ -13,6 +13,7 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'haml-rails', '~> 0.9.0'
 gem 'rails_admin', '~> 0.8.1'
+gem 'devise', '~> 3.5', '>= 3.5.6'
 
 
 group :development, :test do
